@@ -1,12 +1,10 @@
 import React from 'react'
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import logo from './logo.svg'
-import './App.css'
 import { Card } from 'react-bootstrap'
+import './App.css'
 
 function App() {
   return (
-    <Card bg="dark" text="white" style={{ width: '25rem', height: '25rem' }} />
+    <Card border="danger" bg="dark" text="white" style={{ width: '25rem', height: '25rem' }} />
   )
 }
 
