@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container, Row, Col } from 'react-bootstrap'
+import { Card, Row, Col } from 'react-bootstrap'
 import './App.css'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
             marginLeft: 10
           }}
         >
-          <Col>
+          <Col xs={0}>
             <Card
               bg="dark"
               text="white"
@@ -23,7 +23,7 @@ function App() {
 
           <Col>
             <Card
-              bg="success"
+              bg="dark"
               text="white"
               style={{ width: '32rem', height: '18rem' }}
             >
