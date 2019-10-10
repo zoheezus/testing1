@@ -1,10 +1,37 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, Container, Row, Col } from 'react-bootstrap'
 import './App.css'
 
 function App() {
   return (
-    <Card border="danger" bg="dark" text="white" style={{ width: '25rem', height: '25rem' }} />
+      <div>
+        <Row
+          style={{
+            marginTop: 10,
+            marginLeft: 10
+          }}
+        >
+          <Col>
+            <Card
+              bg="dark"
+              text="white"
+              style={{ width: '32rem', height: '18rem' }}
+            >
+              <Card.Header>Passenger Feed</Card.Header>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card
+              bg="success"
+              text="white"
+              style={{ width: '32rem', height: '18rem' }}
+            >
+              <Card.Header>Front Camera Feed</Card.Header>
+            </Card>
+          </Col>
+        </Row>
+      </div>
   )
 }
 
