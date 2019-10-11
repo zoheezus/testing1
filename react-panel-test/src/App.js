@@ -15,7 +15,7 @@ function App() {
           <Card
             bg="dark"
             text="white"
-            style={{ width: '32rem', height: '18rem' }}
+            style={{ width: '28rem', height: '28rem' }}
           >
             <Card.Body>Passenger Camera Feed</Card.Body>
             <Card.Img variant="top" src={require('./logo.svg')} />
@@ -26,7 +26,7 @@ function App() {
           <Card
             bg="dark"
             text="white"
-            style={{ width: '32rem', height: '18rem' }}
+            style={{ width: '28rem', height: '28rem' }}
           >
             <Card.Body>Front Camera Feed</Card.Body>
             <Card.Img variant="top" src={require('./logo.svg')} />
