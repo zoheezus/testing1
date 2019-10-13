@@ -1,5 +1,13 @@
 import React from 'react'
-import { Card, Row, Col, CardDeck, Button } from 'react-bootstrap'
+import {
+  Card,
+  Row,
+  Col,
+  CardDeck,
+  Button,
+  InputGroup,
+  FormControl
+} from 'react-bootstrap'
 import './App.css'
 // import '../public/logo192'
 function App() {
@@ -75,10 +83,10 @@ function App() {
               text="white"
               style={{ backgroundColor: '#393e46', width: '25rem' }}
             >
-              <Card.Header as="h5" style={{ backgroundColor: '#4ecca3' }}>
+              <Card.Header as="h5" style={{ backgroundColor: '#0ecca3' }}>
                 In Queue
               </Card.Header>
-              <Card.Header as="h5" style={{ backgroundColor: '#0ecca3' }}>
+              <Card.Header as="h5" style={{ backgroundColor: '#4ecca3' }}>
                 Idle
               </Card.Header>
               <Card.Header as="h5" style={{ backgroundColor: '#393e46' }}>
@@ -100,9 +108,17 @@ function App() {
               <Card.Header as="h5" style={{ backgroundColor: '#4ecca3' }}>
                 Message Cart
               </Card.Header>
-              <Card.Header style={{ backgroundColord: '#393e46' }}>
-                <em>Type your message...</em>
-              </Card.Header>
+              <InputGroup style={{ backgroundColord: '#393e46' }}>
+                <InputGroup.Prepend>
+                  <InputGroup.Text id="inputGroup-sizing-lg">
+                    Message
+                  </InputGroup.Text>
+                </InputGroup.Prepend>
+                <FormControl
+                  aria-label="Message"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </InputGroup>
             </Card>
 
             <Card
@@ -112,19 +128,47 @@ function App() {
               <Card.Header as="h5" style={{ backgroundColor: '#4ecca3' }}>
                 Send ROS command
               </Card.Header>
-              <Card.Header style={{ backgroundColord: '#393e46' }}>
-                <em>Type your command...</em>
-              </Card.Header>
+              <InputGroup style={{ backgroundColord: '#393e46' }}>
+                <InputGroup.Prepend>
+                  <InputGroup.Text id="inputGroup-sizing-lg">
+                    ROS command
+                  </InputGroup.Text>
+                </InputGroup.Prepend>
+                <FormControl
+                  aria-label="Ros"
+                  aria-describedby="inputGroup-sizing-lg"
+                />
+              </InputGroup>
             </Card>
+          </Col>
 
-            <Card style={{ backgroundColor: '#393e46', width: '25rem', }}>
+          <Col xs={0}>
+          <Card style={{ backgroundColor: '#393e46', width: '25rem' }}>
               <Button
                 as="input"
                 type="button"
                 value="STOP"
                 size="lg"
                 variant="dark"
-                style={{ backgroundColor: '#0ecca3', height: '5rem', fontSize: '20px' }}
+                style={{
+                  backgroundColor: '#DC143C',
+                  height: '5rem',
+                  fontSize: '20px'
+                }}
+              />
+            </Card>
+            <Card style={{ backgroundColor: '#393e46', width: '25rem' }}>
+              <Button
+                as="input"
+                type="button"
+                value="RESUME"
+                size="lg"
+                variant="dark"
+                style={{
+                  backgroundColor: '#4ecca3',
+                  height: '5rem',
+                  fontSize: '20px'
+                }}
               />
             </Card>
           </Col>
