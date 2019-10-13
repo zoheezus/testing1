@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Row, Col, CardDeck } from 'react-bootstrap'
+import { Card, Row, Col, CardDeck, Button } from 'react-bootstrap'
 import './App.css'
 // import '../public/logo192'
 function App() {
@@ -71,7 +71,7 @@ function App() {
       >
         <CardDeck>
           <Col xs={0}>
-            <Card xs={0}
+            <Card
               text="white"
               style={{ backgroundColor: '#393e46', width: '25rem' }}
             >
@@ -92,8 +92,8 @@ function App() {
             </Card>
           </Col>
 
-          <Col>
-            <Card xs={0}
+          <Col xs={0}>
+            <Card
               text="white"
               style={{ backgroundColor: '#393e46', width: '25rem' }}
             >
@@ -103,6 +103,29 @@ function App() {
               <Card.Header style={{ backgroundColord: '#393e46' }}>
                 <em>Type your message...</em>
               </Card.Header>
+            </Card>
+
+            <Card
+              text="white"
+              style={{ backgroundColor: '#393e46', width: '25rem' }}
+            >
+              <Card.Header as="h5" style={{ backgroundColor: '#4ecca3' }}>
+                Send ROS command
+              </Card.Header>
+              <Card.Header style={{ backgroundColord: '#393e46' }}>
+                <em>Type your command...</em>
+              </Card.Header>
+            </Card>
+
+            <Card style={{ backgroundColor: '#393e46', width: '25rem', }}>
+              <Button
+                as="input"
+                type="button"
+                value="STOP"
+                size="lg"
+                variant="dark"
+                style={{ backgroundColor: '#0ecca3', height: '5rem', fontSize: '20px' }}
+              />
             </Card>
           </Col>
         </CardDeck>
