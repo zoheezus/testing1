@@ -21,8 +21,7 @@ function App() {
     >
       <Row
         style={{
-          marginLeft: 10,
-          // position: 'relative'
+          marginLeft: 10
         }}
       >
         <CardDeck style={{ marginTop: 10 }}>
